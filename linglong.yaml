@@ -3,7 +3,7 @@ version: "1"
 package:
   id: com.foxmail.deepin
   name: com.foxmail.deepin
-  version: 1.0.0.2
+  version: 1.0.0.3
   kind: app
   description: |
     com.foxmail.deepin_7.2.25.259deepin6_amd64
@@ -32,7 +32,7 @@ build: |
          -e 's|/opt/deepin-wine6-stable|/runtime/deepin-wine6-stable|g' \
          -e 's|/opt/deepinwine|/runtime/deepinwine|g' \
          -e 's|/opt/deepin-box86|/runtime/deepin-box86|g' \
-         -e 's|BOTTLEPATH="$HOME/.deepinwine/$BOTTLENAME"|BOTTLEPATH="$HOME/.linglong/$BOTTLENAME"|g' "$FILE_PATH"
+         -e '/BOTTLENAME=/s/$/&.linglong/' "$FILE_PATH"
    
   install -d $PREFIX/share
   install -d $PREFIX/bin
