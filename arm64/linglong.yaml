@@ -8,8 +8,8 @@ package:
   description: |
     signed_com.foxmail.deepin_7.2.25.259deepin5_arm64.deb
 
-base: org.deepin.base.wine/23.0.0/arm64
-runtime: org.deepin.runtime.wine/23.0.0/arm64
+base: org.deepin.base.wine/23.2.0/arm64
+runtime: org.deepin.runtime.wine/23.2.1/arm64
 
 command:
   - /opt/apps/com.foxmail.deepin/files/run.sh
