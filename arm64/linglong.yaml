@@ -3,7 +3,7 @@ version: "1"
 package:
   id: com.foxmail.deepin
   name: com.foxmail.deepin
-  version: 1.0.0.0
+  version: 1.0.0.3
   kind: app
   description: |
     signed_com.foxmail.deepin_7.2.25.259deepin5_arm64.deb
